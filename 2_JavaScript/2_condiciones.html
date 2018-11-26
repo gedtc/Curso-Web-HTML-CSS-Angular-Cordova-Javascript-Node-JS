@@ -1,0 +1,76 @@
+﻿<!doctype html>
+
+<html lang="es" >
+<head>
+        <meta charset="utf-8 with bom" >
+        <style>
+        </style>
+        <title>Condiciones</title>
+        
+</head>
+<body>
+        <h1>JavaScript</h1>
+        <h2>Condiciones</h2>
+</body>
+
+<script>
+    
+//IF : condicional
+    // en los paréntesis se pone la condición o valor.
+    // en los corchetes la dirección de flujo en funcion de la respuesta.
+    var age = prompt("Dime tu edad");/*  PROMPT: pregunta información al usuario */
+
+    if ( age < 18 ) 
+    {
+        alert ("Es menor de edad");
+    }
+    else //"o si no" //en este caso introduce la alerta cuando es mayor de edad
+    {
+        alert ("Es mayor de edad");
+    }
+    if ( age == 18)
+    {
+        alert
+        ("¡Bienvenido!")
+    }
+    
+    /* Ejemplos booleanos *///0 es falso y cualquier otro valor es verdadero
+    /* Los valores falsos no entra, esto es, no son devueltos. */
+    if (true)
+    {
+        alert ("It's true");
+    }
+    if (false) //Esto no se suele programar ya que lo falso no se devuelve (también puedeponerse 0)
+    {
+        alert ("It's false");
+    }
+
+    var ifIsAdult = age >= 18; /* puede ponerse también con _ y minúsculas */
+// = identidad de PRIMER grado
+// == identidad de las proposiciones 
+
+// &&  es la CONJUNCIÓN
+// || es la DISYUNCIÓN
+// ! es la NEGACIÓN
+// if es la CONDICIÓN
+
+
+    if (ifIsAdult == true)
+    {
+        console.log ("HOLA");
+    }
+    else 
+    { 
+        if (age <= 3 ) 
+        {
+            console.log ("baby");
+        }   
+            else if (age > 3 && age <= 18)
+            {
+                        console.log("menor");
+            }
+         
+    }
+
+</script>
+</html> 
