@@ -16,29 +16,29 @@
 <script>
    
 var inicio = prompt ("inicio");
-     inicio = parseFloat (inicio);
+     inicio = parseFloat (inicio); //parseFloat admite decimales.parseInt números enteros.
 var fin = prompt("fin");
     fin = parseFloat (fin);
 var contador = inicio
 
-while( contador != fin) {
-
-    if (inicio<fin){
+if(inicio < fin) {
+    while (contador<fin){
     alert (contador);
     contador=contador+1;
     }
-    
-    else if(inicio>fin){
+}
+    else {   //siempre con un if
+        while (contador>fin){
         alert (contador); 
         contador=contador-1;  
     }
+    alert (contador); /* para que el contador llegue al último número*/
     
-}
-    alert (contador);
     
         
             
              
+}
 
 
 
