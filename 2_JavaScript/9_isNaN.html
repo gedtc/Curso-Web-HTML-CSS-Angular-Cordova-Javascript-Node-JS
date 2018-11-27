@@ -15,17 +15,17 @@
 <script>
 var inicio = prompt ("inicio");  
 var fin = prompt ("fin")
-fin = parseInt(fin);
+
 
 //Se podría poner también como texto ya que isNaN distinque el número escrito como texto 
 
-  while ( isNaN(inicio)){  
+  while ( isNaN(inicio) || inicio === "") {  
         
         inicio = prompt ("inicio" );
 }
 
 //
-while (isNaN(fin)){
+while (isNaN(fin) || fin === ""){
 
      fin = prompt ( "fin" );
 }
