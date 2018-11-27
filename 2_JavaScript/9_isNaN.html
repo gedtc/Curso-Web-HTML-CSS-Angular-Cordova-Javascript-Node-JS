@@ -13,11 +13,22 @@
 </body>
 
 <script>
-var inicio = prompt ( Number);
+var inicio = prompt ("inicio");  
+var fin = prompt ("fin")
+fin = parseInt(fin);
 
-while ( isNaN(inicio)){
-         
-        inicio = prompt ( Number);
+//Se podría poner también como texto ya que isNaN distinque el número escrito como texto 
+
+  while ( isNaN(inicio)){  
+        
+        inicio = prompt ("inicio" );
 }
+
+//
+while (isNaN(fin)){
+
+     fin = prompt ( "fin" );
+}
+
 </script>
 </html> 
