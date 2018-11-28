@@ -13,26 +13,27 @@
 <script>
 
     
-
-    document.write("<h2>Objetos</h2>");// el objeto es document. (write tiene la función de escribir en el document)
+// el objeto en este caso es document.  
+//write tiene la función de escribir en document)
+    document.write("<h2>Objetos</h2>");
         
     var nombre = prompt ("Introduzca su nombre:");
     var edad = prompt ("Introduzca su edad");
-    
+            /* Ejemplo en el que te obliga a introducir texto en la var nombre y número mayor de 0 en la var edad */
         while ( nombre === "" ||   !isNaN(nombre)) {  
         alert ("¿Y tu nombre?"); 
         nombre = prompt ("Introduzca su nombre" );
         }
     
         while ( isNaN(edad) || edad === "" || edad<=0) {  
-
+        alert ("No me has dicho la edad");
         edad = prompt ("Introduzca su edad" );
         }
 
-    document.write("Anda! Te llamas " + nombre + " y tienes " + edad);
+    document.write("!Anda! Te llamas " + nombre + " y tienes " + edad +" años");
 
-
-
+alert ("Hola "+ nombre + "\n"+ "\t"+ "\t"+ "\t" + "-Tu edad es: " +"\n"+"\t"+ "\t"+ "\t"+"-"+"\""+ edad +" años"+"\"");
+// \t  tabulador     \n salto de línea
 </script>    
 </body>
 
