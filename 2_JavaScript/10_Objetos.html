@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<!-- Author: GED -->
+<html lang="es" >
+<head>
+        <meta charset="utf-8 with bom" >
+        <style>
+        </style>
+        <title>Objetos JS</title>
+        
+</head>
+<body>
+        
+<script>
+
+    
+
+    document.write("<h2>Objetos</h2>");// el objeto es document. (write tiene la función de escribir en el document)
+        
+    var nombre = prompt ("Introduzca su nombre:");
+    var edad = prompt ("Introduzca su edad");
+    
+        while ( nombre === "" ||   !isNaN(nombre)) {  
+        alert ("¿Y tu nombre?"); 
+        nombre = prompt ("Introduzca su nombre" );
+        }
+    
+        while ( isNaN(edad) || edad === "" || edad<=0) {  
+
+        edad = prompt ("Introduzca su edad" );
+        }
+
+    document.write("Anda! Te llamas " + nombre + " y tienes " + edad);
+
+
+
+</script>    
+</body>
+
+
+</html> 

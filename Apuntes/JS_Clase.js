@@ -11,3 +11,4 @@
 typeof (varible);   //Sirve para SABER el tipo de valor de una variable
                     //EJEMPLO:      var inicio="lol"
                                     //console.log (typeof (inicio))
+                                    Number.isInteger(33); //esta función pregunta si el parámetro es un número entero, todo lo que no sea un num entero lo devuelve como falso
