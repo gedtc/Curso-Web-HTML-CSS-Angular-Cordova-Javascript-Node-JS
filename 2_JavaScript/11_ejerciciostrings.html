@@ -14,7 +14,7 @@
 
 
 <script>
-
+// Ejercicio 3. Coger las iniciales y transformarlas en mayúsculas.
 var texto=prompt ("Introuzca un texto");
 
 var espacio1 = texto.indexOf(" ");
@@ -24,13 +24,20 @@ var palabra2 = texto.substring(espacio1, texto.length);
 var inicial1 = palabra1.charAt(0);
 var inicial2 = palabra2.charAt(1);
 
+var textominus = texto.toLowerCase();
+var palabra1minus = palabra1.toLowerCase();
+var palabra2minus = palabra2.toLowerCase ();
+
 document.write(inicial1.toUpperCase() +". "+inicial2.toLocaleUpperCase()+".");
 
 /////----------------------------------------------
+//Ejercicio 1. Primera letra en mayúscula y el resto en minúsculas.
 
+document.write ("<br/>" + inicial1.toUpperCase() + textominus.substring(1,textominus.length)); 
 
-
-
+//----------------------------------------------------------------
+//Ejercicio 3.  primera letra de cada palabra en mayuscula y el resto en minúscula.
+document.write ("<br/>" + inicial1.toUpperCase() + palabra1minus.substring(1,palabra1minus.length) + "  " +inicial2.toUpperCase() +palabra2minus.substring(2, palabra2minus.length) );
 
 </script>
 </body>
