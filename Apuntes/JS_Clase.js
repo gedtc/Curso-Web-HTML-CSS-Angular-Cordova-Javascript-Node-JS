@@ -17,6 +17,6 @@ string.concat ()  //concatenacion de cadenas  es como un +
 string.toupepercase()  //mayusculas
 string.tolowercase()  //minusculas
 string.charAt(posicion)  //dice la letra detalposicion
-string.indexof(letra) //primera posicion del caracter indicado
+string.indexof(valorabuscar, posiciondeiniciodelabusqueda) // si no se indica inicio da la primera posicion del valor a buscar
 string.lastindexof(letra)  //al revés
 string.substring(principio,final)   // intervalo
