@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<!-- Author: GED -->
+<html lang="es" >
+<head>
+        <meta charset="utf-8 with bom" >
+        <style>
+        </style>
+        <title>Array</title>
+        
+</head>
+<body>
+        <h1>JavaScript</h1>
+        <h2></h2>
+
+
+<script>
+        
+    var ciudades = new Array();
+    var nuevaCiudad = prompt ("Dime una ciudad");
+    var i= 0;
+
+    while (nuevaCiudad !=""){
+        ciudades[i] = nuevaCiudad;
+        i = i + 1;
+        nuevaCiudad = prompt ("Dime otra ciudad"); 
+
+    }
+
+    i=0
+
+    while (i < ciudades.length){
+
+            document.write ("<br/>" + ciudades[i] +"<br/>");
+            i = i + 1;
+
+    }
+    
+
+       
+        
+       
+    
+        
+            
+         
+
+
+        
+        
+
+
+</script>
+</body>
+
+
+</html> 
