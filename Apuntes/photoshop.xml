@@ -4,7 +4,7 @@ Las capas funcionan como láminas transparentes superpuestas.
 
 ctrl t  = para manipular los objetos
 
-ctrl z es por defecto deshacer. Distinto de un paso atrás.
+ctrl z  = por defecto deshacer. Distinto de un paso atrás.
 
 tipografia impresa   conviene que sea con sheriff
 tipografía web conviene que sea sin sheriff
@@ -16,3 +16,5 @@ definir motivo. Para salvar patrones que usamos en varios lugares.
 
 
 doble click en capa - abre menú de efectos
+
+MASCARA  es una zona que permite cargar transparencias
