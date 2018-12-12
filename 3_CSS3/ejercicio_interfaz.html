@@ -1,0 +1,209 @@
+﻿<!doctype html>
+<!-- Author: GED -->
+<html lang="es" >
+<head>
+        <meta charset="utf-8 with bom" >
+        <title>Ejercicio CSS3</title>
+<style>
+header{
+
+    background-color: rgb(233, 234, 235);
+    height:4em ;
+    margin: auto;
+}
+.espacioBanner{
+    background-color: #585555;
+    margin: auto;
+    width: 40em;
+    height: 4em;
+    
+}
+
+
+.botonMenu{
+    background-color: #5f5d5f;
+   
+    color: rgb(252, 248, 248);
+    
+    float:left;
+    margin-right: 6em;
+    margin-left: 1.5em;
+    margin-top: 0.32em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1em;
+    text-decoration: none;
+    border-radius: 45%; /* hace los bordes circulares */
+    
+    position: relative;
+    box-shadow:2px 2px 0  #bdb4b4;
+    top: 2px;
+    transition: 0ms ;
+
+}
+.botonMenu:hover{ /* cuando pasa el ratón por encima */
+    color: rgb(248, 224, 6) ;
+    box-shadow: 0 0 0 #585555;
+    background-color: #585555;
+   
+    transition:0.7s ;
+
+   
+    
+   
+
+
+}
+
+ul li{
+    list-style: none;
+    
+
+    
+}
+body{
+    background-color:rgb(233, 234, 235);
+    margin: 0;
+
+
+}
+
+.espacioCentral{
+
+    background-color: rgb(233, 234, 235);
+    width: 40em;
+    margin: auto; /* auto= posiciona en el centro */
+    min-height: 5em; /* altura mínima */
+    padding: 10px; /* marco interior*/
+
+}
+
+section{
+    background-color: rgb(165, 165, 159);
+    min-height: 5em;
+    margin-top: 10px;
+    padding: 10px;
+    overflow: hidden; /* hace que se adapte la seccion al espacio central */
+}
+
+.caja-100,.caja-33, .caja-75, .caja-25{
+    background-color: #bdb4b4;
+    min-height: 5em;
+    padding: 10px;
+    float: left;
+    margin: auto;
+    
+    
+
+
+}
+  .caja-33{
+    
+    width: 29.75%;
+    float: left;
+    min-width: 5em;
+    margin-left: 2px;
+}
+.caja-75{
+    width: 71%;    
+
+}
+.caja-25{
+    width: 22.3%;
+    margin-left: 1px;
+
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top:0;
+    text-align: center;
+
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+/* .caja-33-flex{
+    width: 30.95%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+
+}
+*/
+
+</style>
+        
+</head>
+<header>
+    <div class="espacioBanner">
+        <ul>
+            <li><a href="#" class="botonMenu">Inicio </a></li>
+            <li><a href="#" class="botonMenu">Contacto </a></li>
+            <li><a href="#" class="botonMenu">Blog </a ></li>
+        </ul>
+
+    </div>
+
+</header>
+<body>
+        
+    <div class= "espacioCentral">
+        <section >
+            <div class="caja-100">
+                <h1>Título 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor et amet voluptatem saepe cupiditate ipsum in earum. Rerum, esse?</p>
+            </div>
+        
+        </section>  
+
+        <section >
+                <div class="caja-33">
+                        <h1>Título 2.1</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor et amet voluptatem saepe cupiditate ipsum in earum. Rerum, esse?</p>
+                </div>
+                <div class="caja-33">
+                        <h1>Título 2.2</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor et amet voluptatem saepe cupiditate ipsum in earum. Rerum, esse?</p>
+                </div>
+                <div class="caja-33">
+                        <h1>Título 2.3</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor et amet voluptatem saepe cupiditate ipsum in earum. Rerum, esse?</p>
+                </div>
+        </section>  
+        <section>
+            <div class="caja-75">
+                <h1>Título 3.1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum laboriosam nam nisi repudiandae. Consectetur provident officia ducimus officiis eligendi sequi, voluptate !</p>
+            </div>
+            <div class="caja-25">
+                <h1>Título 3.2</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+
+        </section>
+    </div>
+
+
+
+
+<script>
+</script>
+</body>
+<footer>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+
+    </nav>
+
+</footer>
+
+
+</html> 
