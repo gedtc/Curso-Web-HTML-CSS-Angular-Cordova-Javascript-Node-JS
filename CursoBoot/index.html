@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Untitled Document</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+  <style>
+  body{
+    background-color: rgb(115, 235, 72);
+  }
+  a{
+    text-transform: uppercase;
+    background-color: black;
+    transition: 1s;
+     text-orientation:upright;
+     transition: 10s;
+  }
+  a:hover{
+    background-color: azure;
+   text-transform: lowercase;
+   
+    transition: 3s;
+  }
+  
+  .clase {
+
+      background-color: rgba(94, 229, 247, 0.795);
+      text-anchor: middle;
+      text-align: center;
+      font-style: oblique;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      border-radius: 15%;
+
+    }
+
+    @keyframes bote{
+      0%{
+        bottom: 100%;
+      }
+      50%{
+        bottom: 50%;
+      }
+      100%{
+        bottom: 0%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- body code goes here -->
+
+  <div class="container">
+    <div class="main row">
+      <article class="col-lg-4 col-md-8 bg-primary text-light mt-2 align-self-center">Lorem ipsum dolor sit amet.</article><!-- lg= distancia media  bg=color-->
+      <article class="col-lg-2 col-md-4 bg-danger text-light ml-4">Lorem ipsum dolor sit amet.</article>
+      <article class="col-lg-2 col-md-4 text-light bg-secondary border border-warning align-self-center">Lorem ipsum
+        dolor sit amet.</article>
+      <article class="col-lg-2 col-md-4 bg-warning text-danger">Lorem ipsum dolor sit amet.</article>
+      <article class="col-lg-2 col-md-4 bg-info text-light">Lorem ipsum dolor sit amet.</article>
+
+
+    </div>
+    <div class="main row">
+      <h1 class="col-12 text-danger">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident debitis <a>aqua</a>m
+        sunt laborum mollitia, dignissimos accusamus explicabo molestiae recusandae neque eaque impedit reprehenderit.
+        Sint ipsam et magnam veniam, dolorem nemo.
+      </h1>
+
+    </div>
+
+  </div>
+  <div>
+    <p class="clase" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolore debitis, hic facilis, nihil
+      alias nemo unde vero blanditiis obcaecati laboriosam, libero in sequi minima. Eos sint asperiores fugiat atque.</p>
+
+  </div>
+
+
+
+
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.0.0.js"></script>
+</body>
+
+</html>
