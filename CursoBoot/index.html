@@ -9,24 +9,61 @@
   <!-- Bootstrap -->
   <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
   <style>
-  body{
-    background-color: rgb(115, 235, 72);
-  }
-  a{
-    text-transform: uppercase;
-    background-color: black;
-    transition: 1s;
-     text-orientation:upright;
-     transition: 10s;
-  }
-  a:hover{
-    background-color: azure;
-   text-transform: lowercase;
-   
-    transition: 3s;
-  }
-  
-  .clase {
+    body {
+      background-color: rgb(115, 235, 72);
+    }
+
+    a {
+      text-transform: uppercase;
+      background-color: rgb(240, 253, 62);
+      transition: 2s;
+      text-orientation: upright;
+      transition: 5s;
+
+animation-name: ani;
+      animation-iteration-count: infinite;
+      animation-duration: 20s;
+      animation-timing-function: linear;
+      animation-direction: alternate-reverse;
+      animation-play-state: running;
+    }
+
+    
+
+    a:hover {
+      background-image:url(/home/ged/Escritorio/transparencia.png);
+      background-position: 60%;
+      text-transform: lowercase;
+      width: 700px;
+      height: 400px;
+      position: absolute;
+      rotate: 30dg;
+
+
+
+
+      transition: 1s;
+
+
+
+    }
+
+    @keyframes ani {
+      0% {
+        transform: translate(-100px) rotate(0dg);
+      }
+
+      50% {
+        transform: translate(0px) rotate(5dg);
+      }
+
+      100% {
+        transform: translate(100px) rotate(10dg);
+      }
+
+    }
+
+    .clase {
 
       background-color: rgba(94, 229, 247, 0.795);
       text-anchor: middle;
@@ -37,14 +74,16 @@
 
     }
 
-    @keyframes bote{
-      0%{
+    @keyframes bote {
+      0% {
         bottom: 100%;
       }
-      50%{
+
+      50% {
         bottom: 50%;
       }
-      100%{
+
+      100% {
         bottom: 0%;
       }
     }
@@ -66,7 +105,8 @@
 
     </div>
     <div class="main row">
-      <h1 class="col-12 text-danger">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident debitis <a>aqua</a>m
+      <h1 class="col-12 text-danger">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident debitis <a
+          class="ani">aqua</a>m
         sunt laborum mollitia, dignissimos accusamus explicabo molestiae recusandae neque eaque impedit reprehenderit.
         Sint ipsam et magnam veniam, dolorem nemo.
       </h1>
@@ -75,7 +115,7 @@
 
   </div>
   <div>
-    <p class="clase" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolore debitis, hic facilis, nihil
+    <p class="clase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolore debitis, hic facilis, nihil
       alias nemo unde vero blanditiis obcaecati laboriosam, libero in sequi minima. Eos sint asperiores fugiat atque.</p>
 
   </div>
