@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<!-- Author: GED -->
+<html lang="es">
+
+<head>
+  <meta charset="utf-8 with bom">
+  <title>Funciones</title>
+  <style>
+body{
+  background-color: rgb(61, 61, 233);
+  /* background-image: url(/home/ged/Escritorio/transparencia.png); */
+  color: rgb(255, 255, 255);
+}
+
+
+  </style>
+
+
+</head>
+
+<body>
+  <h1>JavaScript</h1>
+  <h2></h2>
+
+  <script>
+    /* Función que devuelven un valor*/
+  function dameTitulo() {
+    return "Título: funciones con retorno";
+    
+  }
+ document.write("<h1>" + dameTitulo() + "<h1/>");
+ document.write("<h2>" + dameTitulo() + "<h2/>");
+
+ var tituloWeb = "<h5>"+dameTitulo()+"<h5/>";
+ document.write (tituloWeb);
+
+ /* ----------------------------------------- */
+
+function dameCabecera(texto, nivel) {/* nivel = h1,h2... */
+  var abreH = "<h" +nivel+ ">";
+  var cierraH = "</h" +nivel+">";
+  return abreH + texto + cierraH;
+}
+document.write (dameCabecera ("Cabecera nivel 2", 1));
+document.write (dameCabecera ("Cabecera nivel 2", 2));
+document.write (dameCabecera ("Cabecera nivel 2", 4));
+  
+
+
+
+
+
+
+
+  </script>
+
+</body>
+
+
+</html>

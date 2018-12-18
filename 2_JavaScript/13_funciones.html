@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<!-- Author: GED -->
+<html lang="es">
+
+<head>
+  <meta charset="utf-8 with bom">
+  <title>Funciones</title>
+  <style>
+body{
+  background-color: rgb(61, 61, 233);
+  /* background-image: url(/home/ged/Escritorio/transparencia.png); */
+  color: rgb(255, 255, 255);
+}
+
+  </style>
+
+
+</head>
+
+<body>
+  <h1>JavaScript</h1>
+  <h2></h2>
+
+  <script>
+    /* Función básica: ni recibe ni devuelve */
+    function mostrarTitulo() {
+      document.write("<h2>Subtítulo</h2>");
+      document.write("<br/>");
+    }
+
+    mostrarTitulo(); // Invocar a la función
+
+//Función que recibe datos
+  function calcularDescuento(precio,descuento){
+    var precioconDescuento;
+    precioconDescuento = precio - precio * descuento / 100;
+    document.write("Precio: " + precio + "<br/> Descuento: " + descuento + "<br/> Total: " + precioconDescuento +"<br/>");
+
+  }
+
+  calcularDescuento(105,15);
+  document.write("<br/><br/>");
+  //-------------------------------------------
+  var otroPrecio = 99;
+  var otroDescuento = 5;
+  calcularDescuento(otroPrecio, otroDescuento);
+//------------------------------------------------
+
+
+
+
+
+
+
+  </script>
+
+</body>
+
+
+</html>
