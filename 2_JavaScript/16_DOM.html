@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<!-- Author: GED -->
+<html lang="es">
+
+<head>
+  <meta charset="utf-8 with bom">
+  <title>Plantilla</title>
+  <style>
+  </style>
+
+
+
+
+
+
+</head>
+
+<body>
+  <h1>Elementos DOM de el siguiente DIV</h1>
+  <div id="un_div" style="background-color: aquamarine">
+    <p>un texto</p>
+    <table id="tabla_paises">
+        <tr>
+            <td><strong>España</strong></td>
+            <td><strong>Francia</strong></td>
+            <td><strong>Italia</strong></td>
+          </tr>
+          <tr>
+              <td><strong>Madrid</strong></td>
+              <td><strong>París</strong></td>
+              <td><strong>Roma</strong></td>
+            </tr>
+      
+      </table>
+  </div>
+
+
+  <script>
+    var unDiv = document.getElementById("un_div");
+    var nodoH2 = document.createElement("h2");
+    var textoEnH2 = document.createTextNode("subtítulo añadido en h2");
+    nodoH2.appendChild(textoEnH2);/* hace de textoEnH2 hijo de nodoH2 */
+    unDiv.appendChild(nodoH2);/* hace de nodoH2 hijo de unDiv */
+
+    unDiv.setAttribute("style", "background-color:beige");/* cambia el estílo del atributo */
+
+    document.getElementsByTagName("p")[0]/* te da un array con todas las etiquetas p */
+      .appendChild(document.createTextNode("TEXTO añaido"));
+  </script>
+</body>
+
+
+</html>
