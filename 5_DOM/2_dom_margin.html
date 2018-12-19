@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<!-- Author: GED -->
+<html lang="es">
+
+<head>
+  <meta charset="utf-8 with bom">
+  <title>Plantilla</title>
+  <style>
+  </style>
+
+
+
+
+
+
+</head>
+
+<body>
+  <div id="d1" style="margin:0px 0px 0px 5px; background-color:rgb(29, 189, 218); color: white;"> texto</div>
+
+
+  <script>
+    var posicion = 5;
+    var d1 = document.getElementById("d1");
+    var velocidad = 0.1;
+    var relojId = setInterval(funCadaDecimaSeg, 10); /* setinterval llama a una función cada intervalo de tiempo que indiquemos */
+
+    function funCadaDecimaSeg() {
+              /* el objeto window se refiere al navegador */
+      if (posicion >= window.innerWidth - 200) {
+        clearInterval(relojId);/* clearinterval para la llamada a la función */
+
+      } else {
+
+        posicion+= velocidad;
+        velocidad+= 0.05;
+
+        d1.setAttribute("style", "margin:0px 0px 0px " + posicion + "px; background-color:aquamarine; width: 200px");
+
+      }
+    }
+  </script>
+</body>
+
+
+</html>
