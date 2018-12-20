@@ -47,8 +47,10 @@ function validarInput(inputTexto, texto) {
 
   if (texto == "") {
     inputTexto.style.borderColor = "#F04040";
+    inputTexto.style.backgroundColor= "red" ;
   } else {
-    inputTexto.style.borderColor = "#FFFFFF";
+    inputTexto.style.borderColor = "black";
     inputTexto.value = ponPrimeraMayus(texto);
+    inputTexto.style.backgroundColor="";
   }
 }
