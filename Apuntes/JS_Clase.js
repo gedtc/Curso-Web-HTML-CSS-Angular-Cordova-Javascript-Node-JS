@@ -20,3 +20,19 @@ string.charAt(posicion)  //dice la letra detalposicion
 string.indexof(valorabuscar, posiciondeiniciodelabusqueda) // si no se indica inicio da la primera posicion del valor a buscar
 string.lastindexof(letra)  //al revés
 string.substring(principio,final)   // intervalo
+
+
+/* ------------------------------------------------------------------ */
+switch (variable){
+  case valor1: instrucciones;instrucciones; break;
+  case v2: instrucciones;instrucciones; break;
+  default/* seria como un else */:instrucciones;instrucciones; break;
+}
+
+/* -------------------------------------- */
+do{
+  instrucciones/* obligatorias */;
+}while(condicion);
+
+/* ----------------------- */
+
