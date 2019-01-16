@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<!-- Author: GED -->
+<html lang="es">
+
+<head>
+  <meta charset="utf-8 with bom">
+  <title>Plantilla</title>
+  <style>
+    
+        </style>
+
+
+
+
+
+
+</head>
+
+<body>
+  <h1>JavaScript</h1>
+  <h2></h2>
+  <input type="button" value="Atrás" onclick="atras();" />
+  <input type="button" value="Ir hacia atrás dos páginas" onclick="atras2();" />
+  <input type="button" value="Adelante" onclick="alante()" />
+
+  <script>
+    console.log(window.history.length);
+
+    function atras() {
+      window.history.back();
+    }
+    function atras2() {
+      window.history.back(2);
+    }
+
+    function alante() {
+      window.history.forward();
+
+    }
+  </script>
+</body>
+
+
+</html>
