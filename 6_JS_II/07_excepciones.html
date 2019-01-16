@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<!-- Author: GED -->
+<html lang="es">
+
+<head>
+ <meta charset="utf-8 with bom">
+ <title>Plantilla</title>
+ <style>
+ </style>
+
+
+
+
+
+
+</head>
+
+<body>
+ <div id="div_texto"></div>
+<input type="text" id="hola"/>
+
+
+ <script src="JQ/jquery-3.3.1.js"></script>
+
+
+ <script>
+  function funcionPrincipal() {
+   try {
+    throw new Error("Provocando");
+    $("?div_texto").html("<p>Excepción<p/>");
+    functionInexistente("Bu");
+   } catch (elError) {
+    $("#div_texto").append("<p>Excepción<p/>");
+    $("#div_texto").append(elError.message);
+   } finally {
+    $("#div_texto").append("<p>Finally<p/>");
+
+   }
+   $("#div_texto").append("<p>se ejecuta<p/>");
+
+  }
+  $(document).ready(funcionPrincipal);
+ </script>
+</body>
+
+
+</html>

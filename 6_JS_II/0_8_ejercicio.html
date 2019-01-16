@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<!-- Author: GED -->
+<html lang="es">
+
+<head>
+  <meta charset="utf-8 with bom">
+  <title>Plantilla</title>
+  <style>
+  </style>
+
+
+
+
+
+
+</head>
+
+<body>
+
+  Edad: <input type="number" id="inputEdad" />
+
+  <br />
+  <input type="button" value="Añadir" onclick="addPersona();" />
+
+  <div id="div_texto"></div>
+
+  <!-- comprobar que 
+  1 - tenga texto
+  2 - sea un número
+  3 - esté entre 5 y 10 -->
+
+  <script src="JQ/jquery-3.3.1.js"></script>
+  <script>
+    function addPersona() {
+      var message, x;
+      message = $("#div_texto").html;
+
+      $("#div_texto").html("");
+      x = $("#inputEdad").val();
+      try {
+        if (x == "") throw "Vacío";
+        if (isNaN(x)) throw "no";
+        if (x > 10) throw "alto";
+        if (x < 5) throw "bajo";
+      } catch (err) {
+        $("#div_texto").html("Error: "+ err);
+      }
+    }
+  </script>
+</body>
+
+
+</html>
