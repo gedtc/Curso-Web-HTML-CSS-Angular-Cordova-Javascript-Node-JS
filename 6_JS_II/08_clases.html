@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clases y objetos</title>
+</head>
+
+<body>
+
+  <script src="JQ/jquery-3.3.1.js"></script>
+  <script>
+    //EcmaScript 6
+    // En el nombre de las clases la primera letra es en mayúscula
+
+    class Rectangulo {
+          //constructor define las características fijas que todo objeto debe tener
+      constructor(nuevoAncho, nuevoLargo) {
+        this.ancho = nuevoAncho;
+        this.largo = nuevoLargo;
+
+      }
+          // no hace falta declarar función,solo el método y sus parámetros.
+      area() {
+        var areaTotal = this.ancho * this.largo;
+        return areaTotal;
+      }
+    }
+var unRectangulo = new Rectangulo();
+unRectangulo.ancho = 10;
+unRectangulo.largo = 6;
+
+
+
+document.write("<h1>" + unRectangulo.area() + "</h1>");
+
+var otroRect = new Rectangulo (5,3);
+document.write("<h2>"+otroRect.area()+"</h2>");
+
+class Persona {
+  constructor(nombre, edad){
+    this.nombre=nombre;
+    this.edad = edad;
+  }
+  getAdulto (){
+    if (this.edad >=18){
+       document.write("adulto");
+    }else{
+      document.write("Aún te falta");
+    }
+  }
+}
+var unaPersona = new Persona("Juan",17);
+unaPersona.getAdulto();
+  </script>
+</body>
+
+</html>
