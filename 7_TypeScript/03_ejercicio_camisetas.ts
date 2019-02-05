@@ -103,7 +103,16 @@ algunProducto.mostrar();
 */
 
 
+/* Es muy típico hacer un array de la clase padre
 
+ej:
+
+let listaProductos : Producto [];
+listaProductos[0] = new Camiseta();
+listaProductos[1] = new Libro();
+
+
+*/
 
 
 
